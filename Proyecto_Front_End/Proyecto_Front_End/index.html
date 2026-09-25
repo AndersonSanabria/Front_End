@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTIDIA</title>
+    <!--se relaciona los estilos -->
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+    
+
+</head>
+<header>
+    
+    <!-- en este punto se crea el menu que aparece en la parte superior de la pantalla -->
+    <nav>
+        
+        <div class="logo">
+            <h1>NOTIDIA</h1>
+            <p>Periodico digital</p>
+            <span class ="fecha" > sabado 12 de septiembre del 2026</span>
+        </div>
+        <ul class="menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Noticias" id="ir-noticia">Noticias</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#crear-noticia" id="crearnoticia">Crear noticia</a></li>
+            <li><a href="#Contactenos" id="ir-contacto">Contactenos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!-- en este punto, se crea el main para indicar es el contenido principal de la página -->
+    <main>
+        <!-- se crean las secciones, ya que con esta funcionalidad podemos encapsular
+         el contenido de cada opción de menu, y no debemos crear multiples páginas
+         para esta estructura solo manejaremos el index.html-->
+        <section id="Home">
+            <div class="centro">
+                <h5>Bienvenido a NOTIDIA</h5>
+                <h1>El periodismo que</h1>
+                <div class="linea">
+                    <h1 class="ilumina">ilumina</h1>
+                    <h1>tu mundo</h1>
+                <p>Noticias verificadas sobre educación,técnologia,turismo y comercio</p>
+                <p>contenido que importa y redactado con rigor </p>
+                </div>
+            </div>
+            <!--Creamos una clase botones para poder darles diseño y forma mediante estilos
+            su funcion es que al dar clic, en alguno de los dos botones se direccione 
+            a su respectivo apartado-->
+            <div class="Botones">
+                <a href="#Noticias" id="explorar">Explorar noticias</a></li>
+                <a href="#Contactenos" id="contactar"">Contactar</a></li>
+            </div>
+        </section>
+        <!--seccion de noticias, este apartado tendrá las noticias del periodico-->
+        <section id="Noticias">
+            <h2>Archivo de noticias</h2>
+            <!-- se crea la clase grid, esto con el fin de poder ordenar las noticias en 
+             bloques iguales y estas no queden ni desiguales ni amontonadas-->
+            <div class="noticias-grid">
+                <!--la sección card ya es independiente pues acá estará la información
+                de cada noticia con su respectiva imagen, titulo y descripción-->
+                <div class="noticia-card">
+                    <img src="imagenes/Colombia-Sub-20-1.webp" alt="colombia">
+                    <p><h5>Colombia vs Corea</h5></p>
+                    colombia jugará el día de hoy vs corea del nore
+                    <div class="acciones">
+                        <button class="ver-mas">Ver más</button>
+                        <button class="boton-fav">Favorito</button>
+                    </div>
+                </div>
+                <div class="noticia-card">
+                    <img src="imagenes/universidad.webp" alt="Terremoto">
+                    <p><h5>Habilitan fondo escolar para universidades afectadas por el terremoto</h5></p>
+                    El decreto amplía el objeto de un fondo concebido para colegios públicos, de modo que 
+                    también pueda financiar obras en universidades públicas afectadas por el sismo. ¿Cómo funcionará?
+                    <div class="acciones">
+                        <button class="ver-mas">Ver más</button>
+                        <button class="boton-fav">Favorito</button>
+                    </div>
+                </div>
+                <div class="noticia-card">
+                    <img src="imagenes/gato.webp" alt="Gato silvestre">
+                    <p><h5>Cientificos descubren nueva especie de gato silvestre</h5></p>
+                    Hasta ahora, se creía que solo existía un único grupo de gatos silvestres. 
+                    Pero un estudio basado en el ADN permitió descubrir una nueva especie, y 
+                    determinar que varias subespecies eran en realidad especies nuevas.
+                    <div class="acciones">
+                        <button class="ver-mas">Ver más</button>
+                        <button class="boton-fav">Favorito</button>
+                    </div>
+                </div>
+                <div class="noticia-card">
+                    <img src="imagenes/estudiantes.webp" alt="estudiantes">
+                    <p><h5>Uno de cada 10 estudiantes interrumpe su educuación por cambios climaticos</h5></p>
+                    Más de 171 millones de estudiantes en todo el mundo sufrieron interrupciones en su educación 
+                    durante 2025 debido a tormentas, inundaciones, olas de calor, entre otros peligros climáticos, 
+                    reveló UNICEF. Colombia aparece entre los países en los que se reportaron afectaciones.
+                    <div class="acciones">
+                        <button class="ver-mas">Ver más</button>
+                        <button class="boton-fav">Favorito</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!--Seccion de contactenos, en esta opción tendremos dos apartados o DIVS, 
+        pues en el lado ezquierdo ira la información del periodico y en el derecho 
+        el formulario con el cual interactuará el cliente. -->
+        <section id="Contactenos">
+            <h2>Estamos aqui</h2>
+                <!--se crea este div para que por medio de los estilos podemos dejar un DIV a la 
+                drecha y otroa DIV a la izquierda-->
+                <div class="principal">
+                    <div class="contacta">
+                        <h2>Contacto</h2>
+                        <p>¿tienes una historia que contar,una corrección que reportar
+                            o simplemente quieres saludar? te responderemos en menos de 24 horas</p>
+                        <p><h5><strong>Correo:</strong></h5></p> redaccion@notidia.com
+                        <p><h5><strong>Teléfono:</strong></h5> </p>+57 601 333 333 33
+                        <p><h5><strong>Dirección:</strong></h5></p> calle 15 -1 Tunja-Boyacá
+                        <p><h5><strong>Horario:</strong></h5></p> Lunes a viernes de 8:00 am a 6:00 pm
+                    </div>
+                    
+                    <div class="formulario">
+                        <!--El formulario cuenta con algunas validaciones como:
+                        for = lo ulizizamos para idnicarle al sistema este campo esta asociado
+                              al input  con id="nombre" y asi para todos los campos
+                        maxlength con esto damos un maximo de caracterés en el campo
+                        required obligamos al cliente a digirar el campo para enviar la información-->
+                        <p><h1>Formulario de contacto</h1></p>
+                        <p><label for="nombre">NOMBRE COMPLETO *</label></p>
+                        <p><input type="text" id="nombre" name="nombre" maxlength="30" required  ></p>
+                        <p><label for="email">CORREO ELECTRONICO *</label></p>
+                        <p><input type="text" id="email" name="email" required maxlength="50"></p>
+                        <p><label for="asunto">ASUNTO</label></p>
+                        <p><input type="text" id="asunto" name="asunto" maxlength="50"></p>
+                        <label for="mensaje">MENSAJE *</label></p>  
+                        <!--se define el textarea para definir un texto largo y mejor visualización
+                        para el cliente-->     
+                        <textarea  id="mensaje" name="mensaje" maxlength="200" required></textarea>
+                        <button class="boton-msj">ENVIAR MENSAJE</button>
+                    </div>
+            </div>
+        </section>
+        <!--se crea esta opción para la creación de noticias, es un formulario.-->
+        <section id="crear-noticia">
+            <h4>panel de administración</h4>
+            <h1>Crear noticia</h1>
+            <div class="principal">
+                   <p><label for="titulo">TITULO *</label></p>
+                   <p><input type="text" id="titulo" name="titulo" maxlength="50" required ></p>
+                   <p><label for="autor">AUTOR *</label></p>
+                   <p><input type="text" id="autor" name="autor" maxlength="30"required></p>
+                   <p><label for="categoria">CATEGORIA</label></p>
+                   <p><select id="cateogria" name="categoria"required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="Deporte">Deporte</option>
+                        <option value="Educación">Educación</option>
+                        <option value="Ciencia">Ciencia</option>
+                      </select>
+                    </p>
+                   <label for="mensaje">DESCRIPCIÓN LEVE *</label></p>       
+                   <textarea  id="Descripcion" name="Descripcion" maxlength="700" required></textarea><p>
+                   <label for="contenido">CONTENIDO COMPLETO *</label></p>       
+                   <textarea  id="mensaje" name="contenido" maxlength="200" required></textarea><p>
+                   <label for="url">URL IMAGEN *</label></p>       
+                   <textarea  id="url" name="url" maxlength="100" required></textarea></p>
+                   <button class="btn-publicar">PUBLICAR NOTICIA</button>
+                   <button class="btn-cancelar">Cancelar</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- se crea el footer para crear el pie de página con la información de periodico-->
+    <footer>
+  <div class="footer-contenido">
+    <div class="footer-seccion">
+      <h3>Contacto</h3>
+      <p>Teléfono: +57 300 123 4567</p>
+      <p>Dirección: Calle 123, Tunja, Boyacá</p>
+    </div>
+
+    <div class="footer-seccion">
+      <h3>Correos</h3>
+      <p>info@notidia.com</p>
+      <p>contacto@notidia.com</p>
+      <p>soporte@notidia.com</p>
+    </div>
+
+    <div class="footer-seccion">
+      <h3>Redes Sociales</h3>
+      <p><a href="#">Facebook</a></p>
+      <p><a href="#">Twitter</a></p>
+      <p><a href="#">Instagram</a></p>
+    </div>
+  </div>
+ </footer>
+
+ <!--se relaciona el JS, es el que al momenot realiza las animaciones al dar clic en algunna
+ opción de menú-->
+<script src="js/noticias.js"></script>
+</body>
+</html>
